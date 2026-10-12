@@ -2210,3 +2210,125 @@ a:focus-visible {
     text-align: center;
   }
 }
+
+/* Netflix-inspired compact portfolio footer */
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px 20px 18px;
+  background: #0b0b0b;
+  border-top: 1px solid rgba(229, 9, 20, 0.35);
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.footer-brand {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.footer-brand span {
+  color: #e50914;
+}
+
+.footer-tagline {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto 14px;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-link svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.footer-social-link:hover {
+  color: #e50914;
+  transform: translateY(-2px);
+}
+
+.footer-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  max-width: 1000px;
+  margin: 0 auto 12px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.footer-details a {
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-details a:hover {
+  color: #ffffff;
+}
+
+.footer-separator {
+  color: #e50914;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid #252525;
+  color: #737373;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 24px 14px 16px;
+  }
+
+  .footer-socials {
+    gap: 16px;
+  }
+
+  .footer-social-link {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .footer-social-link svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer-details {
+    gap: 8px 10px;
+    font-size: 11px;
+  }
+}
