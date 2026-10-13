@@ -7,11 +7,13 @@ import Skills from './pages/Skills'
 import DSA from './pages/DSA'
 import Contact from './pages/Contact'
 import './App.css'
-
+import { Analytics } from '@vercel/analytics/react'
+import CinematicIntro from './components/CinematicIntro'
 function App() {
   return (
     <BrowserRouter>
       <div className="netflix-app">
+         <CinematicIntro />
         <Navbar />
 
         <main>
@@ -109,6 +111,7 @@ function App() {
             © 2026 Tanish Kalota. All rights reserved.
           </p>
         </footer>
+        <Analytics />
       </div>
     </BrowserRouter>
   )
